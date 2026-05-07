@@ -20,13 +20,13 @@
 
 **Cause:** Boot order in BIOS still points to old MBR bootloader, or EFI boot entry is missing.
 
-**Fix 1 — Check boot order:**
+**Fix 1: Check boot order:**
 1. Press F1 to enter BIOS
 2. Go to Startup → Boot
 3. Move Windows Boot Manager to position 1
 4. Press F10 to save
 
-**Fix 2 — Repair boot files from USB:**
+**Fix 2: Repair boot files from USB:**
 Boot from Windows 11 USB → Repair my PC → Troubleshoot → Advanced Options → Command Prompt
 
 ```cmd
@@ -88,7 +88,7 @@ powershell -c "[CultureInfo]::InstalledUICulture"
 2. Expand Batteries
 3. Right-click Microsoft ACPI-Compliant Control Method Battery
 4. Select Uninstall device
-5. Reboot — Windows reinstalls the driver automatically
+5. Reboot: Windows reinstalls the driver automatically
 
 Note: This issue often resolves itself after the Windows 11 25H2 upgrade.
 
@@ -103,7 +103,7 @@ Note: This issue often resolves itself after the Windows 11 25H2 upgrade.
 2. Navigate to Drivers & Software → Motherboard Devices
 3. Download the Intel Management Engine Firmware .exe
 4. Run as Administrator while plugged into AC power
-5. System will show a black screen for up to 15 minutes during flash — do not interrupt
+5. System will show a black screen for up to 15 minutes during flash: do not interrupt
 
 ---
 

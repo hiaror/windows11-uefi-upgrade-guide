@@ -1,8 +1,8 @@
 # Windows 11 UEFI Upgrade Guide
-### From Legacy BIOS + MBR to UEFI + GPT + Windows 11 25H2 — A Real-World ThinkPad Migration
+### From Legacy BIOS + MBR to UEFI + GPT + Windows 11 25H2: A Real-World ThinkPad Migration
 
 ## Who This Is For
-You're an IT engineer or tech enthusiast with a laptop stuck on Legacy BIOS and MBR partitioning. Windows 11 24H2 or 25H2 won't install cleanly. You've tried bypasses. You want a proper, permanent fix — not a fragile workaround.
+You're an IT engineer or tech enthusiast with a laptop stuck on Legacy BIOS and MBR partitioning. Windows 11 24H2 or 25H2 won't install cleanly. You've tried bypasses. You want a proper, permanent fix: not a fragile workaround.
 
 This guide documents a real migration performed on a **Lenovo ThinkPad X1 Yoga 4th Gen (i7-8665U)** running Windows 11 23H2. After following these steps, the machine is running **Windows 11 25H2 fully supported, no bypasses needed**.
 
@@ -40,7 +40,7 @@ This guide documents a real migration performed on a **Lenovo ThinkPad X1 Yoga 4
 No data loss. No app reinstallation. Fully supported upgrade path going forward.
 
 ## Author
-Himanshu Arora — Senior Project Delivery Engineer
+Himanshu Arora: Senior Project Delivery Engineer
 - GitHub: [github.com/hiaror](https://github.com/hiaror)
 - LinkedIn: [linkedin.com/in/himanshusac](https://linkedin.com/in/himanshusac)
 - Website: [aroramsp.com](https://aroramsp.com)

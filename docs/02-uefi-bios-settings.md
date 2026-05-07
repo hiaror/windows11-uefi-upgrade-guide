@@ -1,7 +1,7 @@
 # Step 2: Switch Firmware to UEFI
 
 ## Why This Order Matters
-MBR2GPT must run BEFORE you switch to UEFI. If you switch firmware first without converting the disk, the machine won't boot — UEFI looks for an EFI System Partition that doesn't exist yet on an MBR disk.
+MBR2GPT must run BEFORE you switch to UEFI. If you switch firmware first without converting the disk, the machine won't boot: UEFI looks for an EFI System Partition that doesn't exist yet on an MBR disk.
 
 This is the most common mistake people make. Do Step 1 first, always.
 

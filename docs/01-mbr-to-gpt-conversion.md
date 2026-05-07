@@ -1,7 +1,7 @@
 # Step 1: MBR to GPT Conversion
 
 ## Background
-MBR (Master Boot Record) is a legacy disk format from the 1980s. It has a hard limit of 4 primary partitions and only works with Legacy BIOS firmware. GPT (GUID Partition Table) is the modern replacement — it works with UEFI and supports up to 128 partitions.
+MBR (Master Boot Record) is a legacy disk format from the 1980s. It has a hard limit of 4 primary partitions and only works with Legacy BIOS firmware. GPT (GUID Partition Table) is the modern replacement: it works with UEFI and supports up to 128 partitions.
 
 Windows 11 24H2 and later dropped Legacy BIOS/MBR boot support entirely. Converting to GPT is the only clean path forward.
 
@@ -17,7 +17,7 @@ MBR supports a maximum of **4 primary partitions**. Most laptops ship with exact
 | Recovery | ~500 MB-1 GB | WinRE / Windows Recovery |
 | OEM / Second Recovery | ~300 MB-20 GB | Vendor tools or old WinRE |
 
-MBR2GPT needs to create a new **EFI System Partition** during conversion. To do that it requires **3 or fewer primary partitions** — it needs one free slot.
+MBR2GPT needs to create a new **EFI System Partition** during conversion. To do that it requires **3 or fewer primary partitions**: it needs one free slot.
 
 If your disk has 4 primary partitions, MBR2GPT will fail with:
 ```
@@ -38,7 +38,7 @@ list partition
 exit
 ```
 
-Note down all partitions — their type, size, and offset.
+Note down all partitions: their type, size, and offset.
 
 ## Identify What WinRE Is Using
 
@@ -99,7 +99,7 @@ exit
 
 ## Run MBR2GPT
 
-Validate first — never skip this:
+Validate first: never skip this:
 
 ```powershell
 mbr2gpt /validate /allowFullOS /disk:0
@@ -120,4 +120,4 @@ This creates the EFI System Partition automatically and installs UEFI boot files
 4. Installs Windows UEFI boot files into the ESP
 5. Rewrites the partition layout without touching your data
 
-Do NOT reboot yet. Switch firmware to UEFI first — see [Step 2](02-uefi-bios-settings.md).
+Do NOT reboot yet. Switch firmware to UEFI first: see [Step 2](02-uefi-bios-settings.md).

@@ -15,7 +15,7 @@ Get-PSDrive C | Select-Object Used, Free
 powershell -c "[CultureInfo]::InstalledUICulture"
 ```
 
-Note your language output — the ISO you download must match exactly.
+Note your language output: the ISO you download must match exactly.
 
 ## Download the Correct ISO
 Go to **microsoft.com/software-download/windows11**
