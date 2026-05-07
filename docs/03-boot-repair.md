@@ -6,7 +6,7 @@ After switching to UEFI, Windows shows a black screen or loops back to the boot 
 This is not data loss. Your Windows installation is intact.
 
 ## What You Need
-A bootable Windows 11 USB created with Rufus. Boot from it and select **Repair my PC**: do NOT click Install.
+A bootable Windows 11 USB created with Rufus. Boot from it and select **Repair my PC**, do NOT click Install.
 
 ## Access Command Prompt from USB
 1. Boot from the Windows 11 USB
