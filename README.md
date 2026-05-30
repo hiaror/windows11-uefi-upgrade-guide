@@ -61,3 +61,7 @@ This procedure modifies partition tables and firmware boot mode. Skipping a step
 
 ## Disclaimer
 This guide documents a specific real-world migration on Lenovo ThinkPad hardware. Steps and BIOS menu paths may differ on other vendors and models. Provided as-is for reference and learning purposes. Review and adapt before applying to production hardware.
+
+## Blog Post
+
+A full write-up of the script, the BIOS conversion process, and the edge cases is at [AroraMSP: Upgrading Windows 11 on non-UEFI devices with PowerShell](https://aroramsp.com/blog/windows11-uefi-upgrade).
